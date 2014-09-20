@@ -46,15 +46,12 @@ router.post('/login',function(req,res){
  var userName=req.body.userName;
  var password=req.body.password;
     var query ='SELECT id FROM users WHERE users.username = "'+userName+'" AND users.password = "'+password+'"';
-    console.log(query);
     connection.query(query, function(err, rows,fields){
     if(err){
         res.render('login');
-
     }else if(rows[0]){
-        console.log(rows);
         req.session.userId=rows[0].id;
-        res.redirect('/dashboard', {users : rows[0].id});
+        res.redirect('dashboard');
     }else{
         res.render('login');
     }
