@@ -127,6 +127,5 @@ $(document).ready(function(e){
     $("section").each(function(){
         $(this).attr("rel", j);
         ++j;
-    })
-
+    }); 
 });
