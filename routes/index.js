@@ -9,6 +9,15 @@ var connection = mysql.createConnection({
     database: 'performance_management_db'
 })
 
+var mysql = require("mysql");
+
+var connection = mysql.createConnection({
+    hostname: 'localhost',
+    user: 'tmg',
+    password: 'tmg',
+    database: 'performance_management_db'
+});
+
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
@@ -24,7 +33,12 @@ router.get('/forgot', function(req, res) {
 
 //forgot password
 router.get('/user_kra', function(req, res) {
-    res.render('userKra', { title: 'User KRA' });
+    connection.query('SELECT  kra_users.`id` AS kra_user_id,questions.`id` AS question_id ,questions.`title`,questions.`description` FROM kra_users LEFT JOIN kras ON (kras.`id`=kra_users.`kra_id`) LEFT JOIN kra_questions ON (kra_questions.`kra_id`=kras.`id`) LEFT JOIN questions ON (questions.`id`=kra_questions.`question_id`)',function(err,rows,fields) {
+        if(rows.length == 0) {
+            res.render('userKra', { title: "Error", data: "No data present", error: true})
+        }
+        res.render('userKra', { title: 'User KRA',data:rows});
+    });
 });
 
 ///dashboard
