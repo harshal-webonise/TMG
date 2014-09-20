@@ -27,14 +27,23 @@ $(window).load(function() {
 });
 
 
+
 $(document).ready(function(e){
 
-/*    var element = '<div class="form-group"><label class="col-sm-2 control-label">Question 2</label><div class="control col-sm-10 qeditWrapper"><textarea class="form-control"></textarea><span class="deleteBtn"></span></div></div>';
+    var element = '<div class="form-group"><label class="col-sm-2 control-label">Question 2</label><div class="control col-sm-10 qeditWrapper"><textarea class="form-control"></textarea><span class="deleteBtn"></span></div></div>';
    $(document).on("click",".deleteBtn",function(){
         $(this).parents("div.form-group").remove();
    });
     $(document).on("click",".btnAdd",function(e){
         e.preventDefault();
         $(element).insertBefore('.btnAddWrapper');
-    });*/
+    });
+
+
+    var j = 0;
+    $("section").each(function(){
+        $(this).attr("rel", j);
+        ++j;
+    })
+
 });

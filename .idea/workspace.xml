@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b158d22-dce9-43f4-83d4-212d9a8cc1dd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/jquery.cycle2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/radio.png" afterPath="$PROJECT_DIR$/public/images/radio.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitIgnore" afterPath="$PROJECT_DIR$/.gitIgnore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/custom.js" afterPath="$PROJECT_DIR$/public/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.styl" afterPath="$PROJECT_DIR$/public/stylesheets/style.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/user.css" afterPath="$PROJECT_DIR$/public/stylesheets/user.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/createkra.jade" afterPath="$PROJECT_DIR$/views/createkra.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/createkra1.jade" afterPath="$PROJECT_DIR$/views/createkra1.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/user.styl" afterPath="$PROJECT_DIR$/public/stylesheets/user.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/userKra.jade" afterPath="$PROJECT_DIR$/views/userKra.jade" />
     </list>
     <ignored path="TMG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,15 +39,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/login.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="createkra.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/createkra.jade">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,7 +60,16 @@
       <file leaf-file-name="custom.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
+            <state line="41" column="0" selection-start="1430" selection-end="1430" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitIgnore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitIgnore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="6" selection-start="50" selection-end="50" vertical-scroll-proportion="0.04920405">
               <folding />
             </state>
           </provider>
@@ -101,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="8" selection-start="940" selection-end="940" vertical-scroll-proportion="0.63965267">
+            <state line="28" column="0" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,11 +141,12 @@
         <option value="$PROJECT_DIR$/views/login.jade" />
         <option value="$PROJECT_DIR$/views/createKRA.jade" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/public/js/custom.js" />
         <option value="$PROJECT_DIR$/views/createkra1.jade" />
         <option value="$PROJECT_DIR$/views/createkra.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.styl" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
+        <option value="$PROJECT_DIR$/public/js/custom.js" />
+        <option value="$PROJECT_DIR$/.gitIgnore" />
       </list>
     </option>
   </component>
@@ -387,13 +389,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/TMG/open-sans-fontfacekit/web fonts/opensans_regular_macroman/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="0" selection-end="433" vertical-scroll-proportion="0.20930232">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/TMG/open-sans-fontfacekit/web fonts/opensans_light_macroman/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="1" selection-start="0" selection-end="420" vertical-scroll-proportion="0.0">
@@ -450,13 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="38" selection-start="64" selection-end="94" vertical-scroll-proportion="0.0">
@@ -494,7 +482,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="940" selection-end="940" vertical-scroll-proportion="0.63965267">
+        <state line="28" column="0" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1430" selection-end="1430" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitIgnore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="50" selection-end="50" vertical-scroll-proportion="0.04920405">
           <folding />
         </state>
       </provider>
