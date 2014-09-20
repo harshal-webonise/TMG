@@ -1,4 +1,6 @@
 TMG
 ===
-
-TMG
+```
+	npm install
+	npm start
+```
