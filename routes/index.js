@@ -11,6 +11,11 @@ router.get('/forgot', function(req, res) {
     res.render('forgot', { title: 'Forgot password ' });
 });
 
+//forgot password
+router.get('/user_kra', function(req, res) {
+    res.render('userKra', { title: 'User KRA' });
+});
+
 ///dashboard
 router.get('/dashboard', function(req, res) {
     res.render('dashboard', { title: 'admin dashboard ' });

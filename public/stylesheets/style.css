@@ -88,6 +88,8 @@ a.logo {
 .loginWrap img {
   width: 40px;
   height: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   border-radius: 20px;
 }
 .loginWrap .userInfo {
@@ -117,6 +119,8 @@ footer {
   margin: 200px auto;
   padding: 30px;
   background: url("/images/back.png") repeat;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 .loginFormContainer h3 {
@@ -140,6 +144,9 @@ footer {
 .middleContent {
   background: url("/images/back.png") repeat;
   padding: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .mainHeading {
   color: #fff;
