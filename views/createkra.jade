@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    section.middleContent
+       div.activityWrap
+            h3 Step 1
+            form.createForm.form-group(method="post")
+                div.form-group
+                    label.control-label Name
+                    div.control
+                        input(type="text").form-control
+
+                div.form-group
+                    label.control-label Technology
+                    div.control
+                         select.form-control
+                            option PHP
+                            option Front End
+                            option ROR
+                            option BA
+
+                div.form-group
+                    label.control-label Grade
+                    div.control
+                        select.form-control
+                            option Grade A
+                            option Grade B
+                            option Grade C
+                            option Grade D
+
+                div.form-group.clearfix
+                    button.btn.pull-left Next
+                    button.btn.pull-left.btnCancel Cancel
+
+
+

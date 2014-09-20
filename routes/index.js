@@ -16,4 +16,14 @@ router.get('/dashboard', function(req, res) {
     res.render('dashboard', { title: 'admin dashboard ' });
 });
 
+///create KRA
+router.get('/createkra', function(req, res) {
+    res.render('createkra', { title: 'admin create KRA dashboard ' });
+});
+
+///create KRA step 2
+router.get('/createkra1', function(req, res) {
+    res.render('createkra1', { title: 'admin create KRA dashboard ' });
+});
+
 module.exports = router;
