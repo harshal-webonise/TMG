@@ -5,6 +5,7 @@ html
     link(rel='stylesheet', href='/stylesheets/vendor/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/user.css')
+    link(rel='stylesheet', href='/stylesheets/vendor/vsMenu.css')
     script(type='text/javascript' src='js/vendor/jquery-1.11.0.min.js')
     script(type='text/javascript' src='js/vendor/jquery-migrate-1.2.1.min.js')
     script(type='text/javascript' src='js/vendor/jquery.cycle2.js')
@@ -20,12 +21,23 @@ html
                 div.userInfo.pull-right
                     span.userName U R Dusane
                     span.userDesign Front End Developer
-        a.breadcum
+        a.responsiveButton
             span.icon-bar
             span.icon-bar
             span.icon-bar
 
-            
+    div.vsMenu
+            div.icon-list
+                a(href="#").active
+                    i.fa.fa-fw.fa-start-o
+                    span Dashboard
+                a(href="#")
+                    i.fa.fa-fw.fa-start-o
+                    span KRA
+                a(href="#")
+                    i.fa.fa-fw.fa-start-o
+                    span Users
+            button#close-button.close-button X
 
     <!-- img(src='images/bgImg.jpg').backImg -->
     div.container.mainWrap
