@@ -127,5 +127,56 @@ $(document).ready(function(e){
     $("section").each(function(){
         $(this).attr("rel", j);
         ++j;
-    }); 
+    });
+
+    $(".next").addClass("disabled");
+    $(".prev").addClass("hide");
+
+    function check() {
+        var prevStatusCheck = $(".cycle-slideshow section:nth-child(2)").hasClass("cycle-slide-active");
+        var lastChildStatusCheck = $(".cycle-slideshow section:last-child").hasClass("cycle-slide-active");
+        var nextStatus = $(".cycle-slideshow .cycle-slide-active .radioWrap").hasClass("checked")
+        
+        // next status check
+        if (nextStatus) {
+            $(".next").removeClass("disabled");
+            console.log("deo11")
+        } else {
+            console.log("deo")
+        }
+
+        // prev check
+        if (prevStatusCheck) {
+            $(".prev").addClass("hide");
+        } else {
+            $(".prev").removeClass("hide"); 
+        }
+
+        // last child check
+        if(lastChildStatusCheck) {
+            $(".next").addClass("hide");
+            $(".submit").removeClass("hide");
+        } else {
+            $(".next").removeClass("hide");            
+        }
+    }
+
+    $(document).on("change",".cycle-slide-active input",function(){
+        $(".next").removeClass("disabled");
+        var lastChildStatusCheck = $(".cycle-slideshow section:last-child").hasClass("cycle-slide-active");
+        if(lastChildStatusCheck) {
+            $(".submit").removeClass("disabled");
+        }
+    });
+
+
+    $(".next").on("click",function(e){
+        $(".next").addClass("disabled");
+        check();
+    });
+
+    $(".prev").on("click",function(e){
+        check();
+    });
+
 });
