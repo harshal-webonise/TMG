@@ -36,12 +36,20 @@ router.get('/dashboard', function(req, res) {
 router.get('/createkra', function(req, res) {
     var gradesQuery ="select * from grades";
     var technologiesQuery ="select * from technologies";
+    var grades,technologies;
     connection.query(gradesQuery,function(err,rows){
         if(!err){
-            console.log(rows);
+            grades=rows;
         }
     });
-    res.render('createkra', { title: 'admin create KRA dashboard ' });
+
+    connection.query(technologiesQuery,function(err,rows){
+        if(!err){
+            technologies=rows;
+        }
+    });
+
+    res.render('createkra', { title: 'admin create KRA dashboard ',technologies:technologies,grades:grades });
 });
 
 ///create KRA step 2
