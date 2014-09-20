@@ -4,9 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var session =require('express-session');
 var routes = require('./routes/index');
-//var login = require('./routes/login');
 var users = require('./routes/users');
 
 
@@ -21,8 +20,8 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.cookieParser('shhhh, very secret'));
-app.use(express.session());
+app.use(cookieParser('test'));
+app.use(session());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 

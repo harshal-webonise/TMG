@@ -25,16 +25,17 @@ router.get('/forgot', function(req, res) {
 router.post('/login',function(req,res){
  var userName=req.body.userName;
  var password=req.body.password;
-connection.query('select * from users where username=admin and password=admin',function(error,row,fields){
-if(error){
-    console.log('error in query');
-}
-    console.log(fields);
-});
-    if(verified){
-        req.session.username = username;
+    var query ='SELECT id FROM users WHERE users.username = "'+userName+'" AND users.password = "'+password+'"';
+    connection.query(query, function(err, rows,fields){
+    if(err){
+        res.render('login', {users : rows});
+
+    }else{
+        req.session.userId=rows[0].id;
+        res.render('dashboard', {users : rows});
     }
-    res.send(test);
-});
+
+    });
+})
 
 module.exports = router;
