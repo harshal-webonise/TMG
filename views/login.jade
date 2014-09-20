@@ -1,13 +1,16 @@
-div.loginContainer
-    div.loginFormContainer
-        h3 Sign in to PMS
-        form.loginForm.form-signin
-            div.control
-                input(type="text",placeholder="Username").form-control
-            div.control
-                input(type="text",placeholder="password").form-control
-            label.checkBoxLabel
-                input(type="checkbox" value="remember-me")
-                | Remember me
-            button.btn.btn-lg.btn-primary.btn-block(type="submit") Sign in
+extends layout
+
+block content
+    div.loginContainer
+        div.loginFormContainer
+            h3 Sign in to PMS
+            form(action='/login',method='post').loginForm.form-signin#login
+                div.control
+                    input(type="text",placeholder="Username",name="userName").form-control
+                div.control
+                    input(type="text",placeholder="password",name="password").form-control
+                label.checkBoxLabel
+                    input(type="checkbox" value="remember-me")
+                    | Remember me
+                button.btn.btn-lg.btn-primary.btn-block(type="submit") Sign in
 
