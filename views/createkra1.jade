@@ -2,27 +2,46 @@ extends layout
 
 block content
     section.middleContent
+       h2.mainHeading Create KRA
        div.activityWrap
             h3 Step 2
             form.createForm.form-group.form-horizontal(method="post")
                 div.form-group
                     label.col-sm-2.control-label Question 1
-                    div.control.col-sm-10
-                        input(type="text").form-control
+                    div.control.col-sm-10.qeditWrapper
+                         textarea.form-control
+                         span.deleteBtn
+
 
                 div.form-group
                     label.col-sm-2.control-label Question 2
-                    div.control.col-sm-10
+                    div.control.col-sm-10.qeditWrapper
                          textarea.form-control
+                         span.deleteBtn
 
                 div.form-group
                     label.col-sm-2.control-label Question 3
-                    div.control.col-sm-10
+                    div.control.col-sm-10.qeditWrapper
                         textarea.form-control
+                        span.deleteBtn
 
-                div.form-group.clearfix
-                    button.btn.pull-left Next
-                    button.btn.pull-left.btnCancel Cancel
+                 div.form-group
+                    label.col-sm-2.control-label Question 4
+                    div.control.col-sm-10.qeditWrapper
+                        textarea.form-control
+                        span.deleteBtn
+
+                div.form-group.btnAddWrapper.clearfix
+                    div.control.col-sm-10.pull-right
+                        button.btn.pull-right.btn-primary.btnAdd Add New
+
+                div.form-group.clearfix.btnCenter
+                    div.control.col-sm-10.pull-right
+                        button.btn.pull-right.btnCancel.btn-primary Cancel
+                        button.btn.pull-right.btn-primary(type="submit") Submit
+
+
+
 
 
 
