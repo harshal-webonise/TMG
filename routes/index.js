@@ -34,6 +34,13 @@ router.get('/dashboard', function(req, res) {
 
 ///create KRA
 router.get('/createkra', function(req, res) {
+    var gradesQuery ="select * from grades";
+    var technologiesQuery ="select * from technologies";
+    connection.query(gradesQuery,function(err,rows){
+        if(!err){
+            console.log(rows);
+        }
+    });
     res.render('createkra', { title: 'admin create KRA dashboard ' });
 });
 
@@ -43,7 +50,13 @@ router.get('/createkra1', function(req, res) {
     var technologiesQuery ="select * from technologies";
     connection.query(gradesQuery,function(err,rows){
         if(!err){
-            con
+            console.log(rows);
+        }
+    });
+
+    connection.query(technologiesQuery,function(err,rows){
+        if(!err){
+            console.log(rows);
         }
     });
     var technologies =
@@ -68,7 +81,7 @@ router.post('/login',function(req,res){
 });
 
 router.post('/createKra',function(req,res){
-    var
+
 });
 
 module.exports = router;
