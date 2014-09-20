@@ -52,10 +52,8 @@ body
   height:100%
   width:100%
   font-family: "open_sansregular";
-
-body
-    background:url("/images/home.jpg") repeat;
-    background-size:cover;
+  background:url("/images/home.jpg") repeat;
+  background-size:cover;
 
 header
   padding:12px 0
@@ -63,6 +61,25 @@ header
   position:fixed
   width:100%
   z-index:1
+
+.breadcum
+    position:absolute
+    top:0
+    left:0
+    height:68px
+    width:50px
+    display:block
+    text-align:center
+    cursor:pointer
+    .icon-bar
+        margin:0 auto
+        width:30px
+        height:5px
+        margin-top:8px
+        background:#fff
+        display:block
+    .icon-bar:first-child
+        margin-top:20px
 
 img.backImg
     width:100%
@@ -135,7 +152,7 @@ footer
     border-radius(10px)
 
 .mainHeading
-    color:#669933
+    color:#fff
     font-family:"open_sanssemibold"
     margin:0 0 20px
 
@@ -152,8 +169,32 @@ footer
     background:#fff
     padding:10px
     h3
-        color:#00ccff;
+        color:#693
         margin-bottom:10px
+        padding-bottom:10px
+        border-bottom:1px solid #693
 
 .actvityList li
     font-size:16px
+
+.createForm
+    width:600px
+    margin:50px auto
+    textarea
+        min-height:100px
+        resize:none
+
+.btnCancel
+    margin-left:10px
+.qeditWrapper
+    position:relative
+    span
+        position:absolute;
+        right:-10px;
+        background:url("/images/cancel_icon_black.png");
+        width:20px
+        height:20px
+        top:0
+        cursor:pointer
+
+
