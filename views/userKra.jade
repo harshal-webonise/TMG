@@ -40,17 +40,18 @@ block fullWidth
 					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis velit ac felis imperdiet, eget dignissim ante feugiat. Fusce molestie iaculis ipsum, in fringilla felis sodales vel. Vestibulum fringilla dui est, eu hendrerit lorem egestas eu. Suspendisse ornare libero in odio tristique, eget efficitur dui fermentum. Etiam auctor, dui vitae cursus porttitor, arcu urna condimentum enim, quis hendrerit felis est in orci. Praesent non nisl at mauris blandit rhoncus id a elit?
 			
 			div.ansWrap
-				ul
+				ul.clearfix
 					li
-						input(type="radio", name="ans")
+						input(type="radio", name="ans", value="1", id="1")
 					li
-						input(type="radio", name="ans")
+						input(type="radio", name="ans", value="2", id="2")
 					li
-						input(type="radio", name="ans")
+						input(type="radio", name="ans", value="3", id="3")
 					li
-						input(type="radio", name="ans")
+						input(type="radio", name="ans", value="4", id="4")
 					li
-						input(type="radio", name="ans")
+						input(type="radio", name="ans", value="5", id="5")
+
 		section.middleContent
 			h2.mainHeading Design Execution
 			div.quastionWrap
@@ -59,16 +60,23 @@ block fullWidth
 					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis velit ac felis imperdiet, eget dignissim ante feugiat. Fusce molestie iaculis ipsum, in fringilla felis sodales vel. Vestibulum fringilla dui est, eu hendrerit lorem egestas eu. Suspendisse ornare libero in odio tristique, eget efficitur dui fermentum. Etiam auctor, dui vitae cursus porttitor, arcu urna condimentum enim, quis hendrerit felis est in orci. Praesent non nisl at mauris blandit rhoncus id a elit?
 			
 			div.ansWrap
-				ul
+				ul.clearfix
 					li
-						input(type="radio", name="ans")
+						input(type="radio", name="ans", value="1", id="1")
 					li
-						input(type="radio", name="ans")
+						input(type="radio", name="ans", value="2", id="2")
 					li
-						input(type="radio", name="ans")
+						input(type="radio", name="ans", value="3", id="3")
 					li
-						input(type="radio", name="ans")
+						input(type="radio", name="ans", value="4", id="4")
 					li
-						input(type="radio", name="ans")
-	a.prev prev
-	a.next next
+						input(type="radio", name="ans", value="5", id="5")   
+	div.btnWrap
+		div.row
+			div.col-md-6
+				a.btn.btn-lg.btn-success.btn-primary.prev prev
+				a.btn.btn-lg.btn-success.btn-primary.next next
+			div.col-md-6.text-right
+				button.btn.btn-lg.btn-success.btn-primary(type="submit") Save & Exit
+	
+
