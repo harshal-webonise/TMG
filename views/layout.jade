@@ -2,6 +2,21 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/vendor/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    header.mainHeader
+        div.container
+            a.logo.pull-left
+                img(src='/images/logo.png', alt='webonise logo')
+
+            div.loginWrap.clearfix.pull-right
+                img(src='/images/pic.jpg',alt='user image').pull-left
+                div.userInfo.pull-right
+                    span.userName Unmesh R Dusane
+                    span.userDesign Front End Developer
+
+
+    <!-- img(src='images/bgImg.jpg').backImg -->
+    div.container.mainWrap
+        block content
