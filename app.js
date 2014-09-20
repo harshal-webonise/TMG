@@ -57,5 +57,5 @@ app.use(function(err, req, res, next) {
     });
 });
 
-
+//app.get('/',routes.index);
 module.exports = app;
