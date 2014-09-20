@@ -39,6 +39,14 @@ router.get('/createkra', function(req, res) {
 
 ///create KRA step 2
 router.get('/createkra1', function(req, res) {
+    var gradesQuery ="select * from grades";
+    var technologiesQuery ="select * from technologies";
+    connection.query(gradesQuery,function(err,rows){
+        if(!err){
+            con
+        }
+    });
+    var technologies =
     res.render('createkra1', { title: 'admin create KRA dashboard ' });
 });
 
@@ -57,6 +65,10 @@ router.post('/login',function(req,res){
     }
 
     });
-})
+});
+
+router.post('/createKra',function(req,res){
+    var
+});
 
 module.exports = router;
