@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b158d22-dce9-43f4-83d4-212d9a8cc1dd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="DELETED" beforePath="D:\projects\TMG\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\TMG\.idea\TMG.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\TMG\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\TMG\.idea\libraries\sass_stdlib.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\TMG\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\TMG\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\TMG\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\TMG\.idea\vcs.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitIgnore" afterPath="$PROJECT_DIR$/.gitIgnore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/custom.js" afterPath="$PROJECT_DIR$/public/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.styl" afterPath="$PROJECT_DIR$/public/stylesheets/style.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
     </list>
     <ignored path="TMG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitIgnore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitIgnore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitIgnore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+            <state line="2" column="19" selection-start="63" selection-end="63" vertical-scroll-proportion="0.046511628">
               <folding />
             </state>
           </provider>
@@ -88,10 +96,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vsMenu.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="vsMenu.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/vendor/vsMenu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="19" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.56657225">
+            <state line="51" column="20" selection-start="1027" selection-end="1027" vertical-scroll-proportion="-5.8">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="10" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,15 +118,6 @@
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="34" selection-start="1143" selection-end="1149" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/dashboard.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="38" selection-start="64" selection-end="94" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,11 +146,12 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/createkra1.jade" />
         <option value="$PROJECT_DIR$/views/createkra.jade" />
-        <option value="$PROJECT_DIR$/.gitIgnore" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.styl" />
         <option value="$PROJECT_DIR$/public/js/custom.js" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/vendor/vsMenu.css" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/.gitIgnore" />
       </list>
     </option>
   </component>
@@ -248,6 +257,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.externalResources" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -367,13 +377,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/TMG/open-sans-fontfacekit/web fonts/opensans_semibold_macroman/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="0" selection-end="441" vertical-scroll-proportion="0.25581396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="20" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
@@ -423,13 +426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitIgnore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/createkra1.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="67" selection-start="1478" selection-end="1490" vertical-scroll-proportion="0.0">
@@ -474,7 +470,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/vendor/vsMenu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="19" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.56657225">
+        <state line="51" column="20" selection-start="1027" selection-end="1027" vertical-scroll-proportion="-5.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="10" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitIgnore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="63" selection-end="63" vertical-scroll-proportion="0.046511628">
           <folding />
         </state>
       </provider>
