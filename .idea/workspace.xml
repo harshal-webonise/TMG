@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b158d22-dce9-43f4-83d4-212d9a8cc1dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="DELETED" beforePath="D:\projects\TMG\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\TMG\.idea\TMG.iml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\TMG\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\TMG\.idea\libraries\sass_stdlib.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\TMG\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\TMG\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\TMG\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\TMG\.idea\vcs.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitIgnore" afterPath="$PROJECT_DIR$/.gitIgnore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/user.css" afterPath="$PROJECT_DIR$/public/stylesheets/user.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/vsMenu.css" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/vsMenu.css" />
     </list>
     <ignored path="TMG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,7 +64,7 @@
       <file leaf-file-name=".gitIgnore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitIgnore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="63" selection-end="63" vertical-scroll-proportion="0.046511628">
+            <state line="2" column="6" selection-start="50" selection-end="50" vertical-scroll-proportion="0.046511628">
               <folding />
             </state>
           </provider>
@@ -99,7 +91,7 @@
       <file leaf-file-name="vsMenu.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/vendor/vsMenu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="20" selection-start="1027" selection-end="1027" vertical-scroll-proportion="-5.8">
+            <state line="188" column="20" selection-start="4217" selection-end="4217" vertical-scroll-proportion="-19.4">
               <folding />
             </state>
           </provider>
@@ -108,7 +100,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="10" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.0">
+            <state line="26" column="10" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,8 +141,8 @@
         <option value="$PROJECT_DIR$/public/stylesheets/style.styl" />
         <option value="$PROJECT_DIR$/public/js/custom.js" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
-        <option value="$PROJECT_DIR$/public/stylesheets/vendor/vsMenu.css" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/public/stylesheets/vendor/vsMenu.css" />
         <option value="$PROJECT_DIR$/.gitIgnore" />
       </list>
     </option>
@@ -468,23 +460,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/vendor/vsMenu.css">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="20" selection-start="1027" selection-end="1027" vertical-scroll-proportion="-5.8">
+        <state line="26" column="10" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/vendor/vsMenu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="10" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.0">
+        <state line="188" column="20" selection-start="4217" selection-end="4217" vertical-scroll-proportion="-19.4">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitIgnore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="63" selection-end="63" vertical-scroll-proportion="0.046511628">
+        <state line="2" column="6" selection-start="50" selection-end="50" vertical-scroll-proportion="0.046511628">
           <folding />
         </state>
       </provider>

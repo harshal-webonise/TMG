@@ -69,7 +69,7 @@
 .vsMenu a.active {
     background: #000;
     color:#fff;
-    box-shadow: -12px 0 8px -8px rgba(0, 0, 0, 0.25) inset
+    box-shadow: -12px 0 8px -8px rgba(102, 153, 51, 0.8) inset
 }
 .vsMenu a:hover,
 .vsMenu a:focus {
@@ -186,7 +186,7 @@
     height: 100%;
     top: 0;
     left: 50%;
-    background: #bdc3c7;
+    background: #000;
 }
 
 .close-button::before {
