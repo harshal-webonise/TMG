@@ -1,3 +1,7 @@
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
 
 
 @font-face
@@ -31,7 +35,12 @@
     font-style: normal;
 
 
-
+h1,h2,h3,h4
+    margin:0;
+ul,li
+    list-style:none
+    margin:0
+    padding:0
 
 .transBg
     background:url(/images/back.png) repeat
@@ -42,11 +51,9 @@ html
 body
   height:100%
   width:100%
-  font-family: 'open_sansregular';
-
-body
-    background:url("/images/home.jpg") repeat;
-    background-size:cover;
+  font-family: "open_sansregular";
+  background:url("/images/home.jpg") repeat;
+  background-size:cover;
 
 header
   padding:12px 0
@@ -54,6 +61,25 @@ header
   position:fixed
   width:100%
   z-index:1
+
+.breadcum
+    position:absolute
+    top:0
+    left:0
+    height:68px
+    width:50px
+    display:block
+    text-align:center
+    cursor:pointer
+    .icon-bar
+        margin:0 auto
+        width:30px
+        height:5px
+        margin-top:8px
+        background:#fff
+        display:block
+    .icon-bar:first-child
+        margin-top:20px
 
 img.backImg
     width:100%
@@ -81,8 +107,10 @@ a.logo
         color:#ccc
 
 .mainWrap
-    padding:65px 0 30px 0
+    padding-top:90px
+    padding-bottom:30px
     position:relative
+
 
 footer
     height:30px
@@ -116,4 +144,57 @@ footer
     input[type="checkbox"]
             position:absolute
             left:0
+
+
+.middleContent
+    background:url(/images/back.png) repeat
+    padding:20px
+    border-radius(10px)
+
+.mainHeading
+    color:#fff
+    font-family:"open_sanssemibold"
+    margin:0 0 20px
+
+.aprStart
+    font-size:16px
+    line-height:20px
+    color:#fff
+    margin-bottom:20px
+    padding:10px
+    background:#693
+
+.activityWrap
+    min-height:550px
+    background:#fff
+    padding:10px
+    h3
+        color:#693
+        margin-bottom:10px
+        padding-bottom:10px
+        border-bottom:1px solid #693
+
+.actvityList li
+    font-size:16px
+
+.createForm
+    width:600px
+    margin:50px auto
+    textarea
+        min-height:100px
+        resize:none
+
+.btnCancel
+    margin-left:10px
+.qeditWrapper
+    position:relative
+    span
+        position:absolute;
+        right:-10px;
+        background:url("/images/cancel_icon_black.png");
+        width:20px
+        height:20px
+        top:0
+        cursor:pointer
+
 

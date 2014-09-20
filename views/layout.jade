@@ -4,6 +4,11 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/vendor/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/user.css')
+    script(type='text/javascript' src='js/vendor/jquery-1.11.0.min.js')
+    script(type='text/javascript' src='js/vendor/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript' src='js/vendor/jquery.cycle2.js')
+    script(type='text/javascript' src='js/custom.js')
   body
     header.mainHeader
         div.container
@@ -13,9 +18,14 @@ html
             div.loginWrap.clearfix.pull-right
                 img(src='/images/pic.jpg',alt='user image').pull-left
                 div.userInfo.pull-right
-                    span.userName Unmesh R Dusane
+                    span.userName U R Dusane
                     span.userDesign Front End Developer
+        a.breadcum
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
 
+            
 
     <!-- img(src='images/bgImg.jpg').backImg -->
     div.container.mainWrap
