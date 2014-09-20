@@ -1,82 +1,44 @@
 extends layout
 
 block content
-	div.progressWrap
-		div.progressBar
+	if error
+		h1 Error
+	else
+		div.progressWrap
+			div.progressBar
+		div.cycle-slideshow(
+		data-cycle-fx='scrollHorz',
+		data-cycle-timeout='0', 
+		data-cycle-slides='> section',
+		data-cycle-prev=".prev",
+		data-cycle-next=".next")
 
-block fullWidth
-	div.cycle-slideshow(
-	data-cycle-fx='carousel',
-	data-cycle-timeout='0', 
-	data-cycle-slides='> section',
-	data-cycle-carousel-fluid='true',
-	data-cycle-prev=".prev",
-	data-cycle-next=".next",
-	data-cycle-carousel-visible="3")
-		section.middleContent
-			h2.mainHeading Design Execution
-			div.quastionWrap
-				div.qustWrap
-					b Q1 
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis velit ac felis imperdiet, eget dignissim ante feugiat. Fusce molestie iaculis ipsum, in fringilla felis sodales vel. Vestibulum fringilla dui est, eu hendrerit lorem egestas eu. Suspendisse ornare libero in odio tristique, eget efficitur dui fermentum. Etiam auctor, dui vitae cursus porttitor, arcu urna condimentum enim, quis hendrerit felis est in orci. Praesent non nisl at mauris blandit rhoncus id a elit?
-			
-			div.ansWrap
-				ul
-					li
-						input(type="radio", name="ans")
-					li
-						input(type="radio", name="ans")
-					li
-						input(type="radio", name="ans")
-					li
-						input(type="radio", name="ans")
-					li
-						input(type="radio", name="ans")
-		section.middleContent
-			h2.mainHeading Design Execution
-			div.quastionWrap
-				div.qustWrap
-					b Q1 
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis velit ac felis imperdiet, eget dignissim ante feugiat. Fusce molestie iaculis ipsum, in fringilla felis sodales vel. Vestibulum fringilla dui est, eu hendrerit lorem egestas eu. Suspendisse ornare libero in odio tristique, eget efficitur dui fermentum. Etiam auctor, dui vitae cursus porttitor, arcu urna condimentum enim, quis hendrerit felis est in orci. Praesent non nisl at mauris blandit rhoncus id a elit?
-			
-			div.ansWrap
-				ul.clearfix
-					li
-						input(type="radio", name="ans", value="1", id="1")
-					li
-						input(type="radio", name="ans", value="2", id="2")
-					li
-						input(type="radio", name="ans", value="3", id="3")
-					li
-						input(type="radio", name="ans", value="4", id="4")
-					li
-						input(type="radio", name="ans", value="5", id="5")
-
-		section.middleContent
-			h2.mainHeading Design Execution
-			div.quastionWrap
-				div.qustWrap
-					b Q1 
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis velit ac felis imperdiet, eget dignissim ante feugiat. Fusce molestie iaculis ipsum, in fringilla felis sodales vel. Vestibulum fringilla dui est, eu hendrerit lorem egestas eu. Suspendisse ornare libero in odio tristique, eget efficitur dui fermentum. Etiam auctor, dui vitae cursus porttitor, arcu urna condimentum enim, quis hendrerit felis est in orci. Praesent non nisl at mauris blandit rhoncus id a elit?
-			
-			div.ansWrap
-				ul.clearfix
-					li
-						input(type="radio", name="ans", value="1", id="1")
-					li
-						input(type="radio", name="ans", value="2", id="2")
-					li
-						input(type="radio", name="ans", value="3", id="3")
-					li
-						input(type="radio", name="ans", value="4", id="4")
-					li
-						input(type="radio", name="ans", value="5", id="5")   
-	div.btnWrap
-		div.row
-			div.col-md-6
-				a.btn.btn-lg.btn-success.btn-primary.prev prev
-				a.btn.btn-lg.btn-success.btn-primary.next next
-			div.col-md-6.text-right
-				button.btn.btn-lg.btn-success.btn-primary(type="submit") Save & Exit
+			each list in data
+				section.middleContent
+					h2.mainHeading #{list.title}
+					div.quastionWrap
+						div.qustWrap
+							b Q#{list.id} 
+							p #{list.description}
+					
+					div.ansWrap
+						ul
+							li
+								input(type="radio", name="ans")
+							li
+								input(type="radio", name="ans")
+							li
+								input(type="radio", name="ans")
+							li
+								input(type="radio", name="ans")
+							li
+								input(type="radio", name="ans")
+		div.btnWrap
+			div.row
+				div.col-md-6
+					a.btn.btn-lg.btn-success.btn-primary.prev prev
+					a.btn.btn-lg.btn-success.btn-primary.next next
+				div.col-md-6.text-right
+					button.btn.btn-lg.btn-success.btn-primary(type="submit") Save & Exit
 	
 

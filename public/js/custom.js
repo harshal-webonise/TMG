@@ -32,13 +32,4 @@ $(document).ready(function(){
         $(this).attr("rel", j);
         ++j;
     });
-
-    $( '.cycle-slideshow').on( 'cycle-before', function(event) {
-        var slideWidth = $('.cycle-slideshow').width();
-        var slideWindowWidth = $(window).width();
-        var remainWidth = (slideWindowWidth - slideWidth);
-        var mainWidth = remainWidth / 2;
-        $(".cycle-slideshow").css("margin-left", mainWidth + "px");
-        // argument opts is the slideshow's option hash
-    });
 });
