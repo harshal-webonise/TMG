@@ -8,7 +8,12 @@ router.get('/', function(req, res) {
 
 //forgot password
 router.get('/forgot', function(req, res) {
-    res.render('forgot', { title: 'Express' });
+    res.render('forgot', { title: 'Forgot password ' });
+});
+
+///dashboard
+router.get('/dashboard', function(req, res) {
+    res.render('dashboard', { title: 'admin dashboard ' });
 });
 
 module.exports = router;

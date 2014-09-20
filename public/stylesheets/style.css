@@ -19,6 +19,18 @@
   font-weight: normal;
   font-style: normal;
 }
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .transBg {
   background: url("/images/back.png") repeat;
 }
@@ -29,7 +41,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  font-family: 'open_sansregular';
+  font-family: "open_sansregular";
 }
 body {
   background: url("/images/home.jpg") repeat;
@@ -69,7 +81,8 @@ a.logo {
   color: #ccc;
 }
 .mainWrap {
-  padding: 65px 0 30px 0;
+  padding-top: 90px;
+  padding-bottom: 30px;
   position: relative;
 }
 footer {
@@ -104,4 +117,33 @@ footer {
 .checkBoxLabel input[type="checkbox"] {
   position: absolute;
   left: 0;
+}
+.middleContent {
+  background: url("/images/back.png") repeat;
+  padding: 20px;
+}
+.mainHeading {
+  color: #693;
+  font-family: "open_sanssemibold";
+  margin: 0 0 20px;
+}
+.aprStart {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #693;
+}
+.activityWrap {
+  min-height: 550px;
+  background: #fff;
+  padding: 10px;
+}
+.activityWrap h3 {
+  color: #0cf;
+  margin-bottom: 10px;
+}
+.actvityList li {
+  font-size: 16px;
 }
