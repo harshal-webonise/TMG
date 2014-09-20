@@ -25,3 +25,11 @@ var _customRadioButton = function(){
 $(window).load(function() {
     _customRadioButton();   
 });
+
+$(document).ready(function(){
+    var j = 0;
+    $("section").each(function(){
+        $(this).attr("rel", j);
+        ++j;
+    })
+});
