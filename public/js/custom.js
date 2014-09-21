@@ -132,6 +132,13 @@ $(document).ready(function(e){
     $(".next").addClass("disabled");
     $(".prev").addClass("hide");
 
+    var lengthCount = $(".cycle-slideshow section").length;
+    var precent = 100 / lengthCount;
+
+    console.log(precent)
+    console.log(lengthCount)
+
+    $(".progressBar").css("width",0)
     function check() {
         var prevStatusCheck = $(".cycle-slideshow section:nth-child(2)").hasClass("cycle-slide-active");
         var lastChildStatusCheck = $(".cycle-slideshow section:last-child").hasClass("cycle-slide-active");
@@ -170,6 +177,7 @@ $(document).ready(function(e){
             $(".next").removeClass("disabled");
             var lastChildStatusCheck = $(".cycle-slideshow section:last-child").hasClass("cycle-slide-active");
             if(lastChildStatusCheck) {
+                $(".progressBar").css("width",done+precent+"%");
                 $(".submit").removeClass("disabled");
             }            
         }
@@ -183,14 +191,17 @@ $(document).ready(function(e){
             $(".next").removeClass("disabled");
             var lastChildStatusCheck = $(".cycle-slideshow section:last-child").hasClass("cycle-slide-active");
             if(lastChildStatusCheck) {
+                $(".progressBar").css("width",done+precent+"%");
                 $(".submit").removeClass("disabled");
             }            
         }
     });
 
-
+    var done = 0;
     $(".next").on("click",function(e){
         $(".next").addClass("disabled");
+        done += precent;
+        $(".progressBar").css("width",done+"%");
         check();
     });
 
