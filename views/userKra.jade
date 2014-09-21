@@ -18,21 +18,14 @@ block content
 					h2.mainHeading #{list.title}
 					div.quastionWrap
 						div.qustWrap
-							b Q#{list.id} 
+							b Q#{list.question_id} 
 							p #{list.description}
 					
 					div.ansWrap
 						ul
-							li
-								input(type="radio", name="ans")
-							li
-								input(type="radio", name="ans")
-							li
-								input(type="radio", name="ans")
-							li
-								input(type="radio", name="ans")
-							li
-								input(type="radio", name="ans")
+							each ratting in [1,2,3,4,5]
+								li
+									input(type="radio", name="#{list.question_id}", id=""+ratting+"", value="Grade "+ratting+"")
 		div.btnWrap
 			div.row
 				div.col-md-6
@@ -40,5 +33,6 @@ block content
 					a.btn.btn-lg.btn-success.btn-primary.next next
 				div.col-md-6.text-right
 					button.btn.btn-lg.btn-success.btn-primary(type="submit") Save &amp; Exit
+					a.btn.btn-lg.btn-success.btn-primary.hide.submit.disabled(href="/") Finish &amp; Submit
 	
 
