@@ -9,25 +9,25 @@ block content
                 div.form-group
                     label.control-label Name
                     div.control
-                        input(type="text").form-control
+                        input(type="text" name="name" ).form-control
 
                 div.form-group
                     label.control-label Technology
                     div.control
-                         select.form-control
-                            option PHP
-                            option Front End
-                            option ROR
-                            option BA
+                         select(name="technologies").form-control
+                            option(value=1) PHP
+                            option(value=2) Front End
+                            option(value=3) ROR
+                            option(value=4) BA
 
                 div.form-group
                     label.control-label Grade
                     div.control
-                        select.form-control
-                            option Grade A
-                            option Grade B
-                            option Grade C
-                            option Grade D
+                        select(name="grades").form-control
+                            option(value=1) Grade A
+                            option(value=2) Grade B
+                            option(value=3) Grade C
+                            option(value=4) Grade D
 
                 div.form-group.clearfix
                     button.btn.pull-right.btnCancel.btn-primary Cancel
