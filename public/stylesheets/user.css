@@ -28,7 +28,7 @@
   border-radius: 5px;
 }
 .quastionWrap {
-  height: 300px;
+  height: 165px;
 }
 .qustWrap {
   -webkit-border-radius: 10px;
@@ -36,9 +36,22 @@
   border-radius: 10px;
   background: #fff;
   padding: 20px;
+  position: relative;
+}
+.qustWrap b {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.qustWrap p {
+  padding-left: 30px;
+}
+.ansWrap {
+  margin: 0 15px 15px 0;
+  float: left;
+  width: 200px;
 }
 .ansWrap li {
-  float: left;
   background: #39c;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -46,9 +59,8 @@
   padding: 0 10px;
   height: 30px;
   line-height: 30px;
-  width: 18.3%;
-  margin-left: 2%;
   color: #fff;
+  margin-bottom: 10px;
 }
 .ansWrap li:first-child {
   margin-left: 0;
@@ -66,6 +78,23 @@
   width: 85%;
   padding-left: 5px;
   margin: 0;
+}
+.commentWrap {
+  float: left;
+  width: 885px;
+  color: #e1e1e1;
+  font-size: 12px;
+}
+.commentWrap textarea {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  height: 140px;
+  width: 99.5%;
+  padding: 10px;
+  margin-bottom: 12px;
+  background: #e1e1e1;
+  color: #000;
 }
 .radioWrap {
   background: url("/images/radio.png") left top no-repeat;
