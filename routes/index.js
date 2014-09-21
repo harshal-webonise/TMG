@@ -100,7 +100,7 @@ router.post('/login', function (req, res) {
     });
 });
 
-router.post('/createKra', function (req, res) {
+router.post('/questions', function (req, res) {
     console.log(req.body.name);
     console.log(req.body.technolgies);
     console.log(req.body.grades);
@@ -114,7 +114,7 @@ router.post('/createKra', function (req, res) {
             console.log(err.fatal);
             if (!err.fatal) {
                 console.log('Inserted successfully');
-                res.render('createkra1', { title: 'admin create KRA dashboard ',id:rows.insertId });
+                res.render('createkra1', { title: 'admin create KRA dashboard ',kra_id:rows.insertId });
             }else{
                     res.redirect('createkra');
             }
