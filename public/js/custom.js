@@ -135,7 +135,7 @@ $(document).ready(function(e){
     function check() {
         var prevStatusCheck = $(".cycle-slideshow section:nth-child(2)").hasClass("cycle-slide-active");
         var lastChildStatusCheck = $(".cycle-slideshow section:last-child").hasClass("cycle-slide-active");
-        var nextStatus = $(".cycle-slideshow .cycle-slide-active .radioWrap").hasClass("checked")
+        var nextStatus = $(".cycle-slideshow .cycle-slide-active .radioWrap").hasClass("checked");
         
         // next status check
         if (nextStatus) {
@@ -162,10 +162,29 @@ $(document).ready(function(e){
     }
 
     $(document).on("change",".cycle-slide-active input",function(){
-        $(".next").removeClass("disabled");
-        var lastChildStatusCheck = $(".cycle-slideshow section:last-child").hasClass("cycle-slide-active");
-        if(lastChildStatusCheck) {
-            $(".submit").removeClass("disabled");
+        $(this).parent("span").addClass("checked")
+        var nextStatus = $(".cycle-slideshow .cycle-slide-active .radioWrap").hasClass("checked")
+        var comment = $(".cycle-slide-active textarea").val().length;
+        console.log(comment)
+        if( nextStatus && comment > 0) {
+            $(".next").removeClass("disabled");
+            var lastChildStatusCheck = $(".cycle-slideshow section:last-child").hasClass("cycle-slide-active");
+            if(lastChildStatusCheck) {
+                $(".submit").removeClass("disabled");
+            }            
+        }
+    });
+
+    $(document).on("change",".cycle-slide-active textarea",function(){
+        var nextStatus = $(".cycle-slideshow .cycle-slide-active .radioWrap").hasClass("checked")
+        var comment = $(".cycle-slide-active textarea").val().length;
+        console.log(comment)
+        if( nextStatus && comment > 0) {
+            $(".next").removeClass("disabled");
+            var lastChildStatusCheck = $(".cycle-slideshow section:last-child").hasClass("cycle-slide-active");
+            if(lastChildStatusCheck) {
+                $(".submit").removeClass("disabled");
+            }            
         }
     });
 

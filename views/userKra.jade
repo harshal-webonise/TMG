@@ -22,15 +22,19 @@ block content
 							p #{list.description}
 					
 					div.ansWrap
-						ul
+						ul.clearfix
 							each ratting in [1,2,3,4,5]
 								li
 									input(type="radio", name="#{list.question_id}", id=""+ratting+"", value="Grade "+ratting+"")
+					div.commentWrap
+						textarea(placeholder="Comments")
+						b Help:
+						p Help text here 
 		div.btnWrap
 			div.row
 				div.col-md-6
-					a.btn.btn-lg.btn-success.btn-primary.prev prev
-					a.btn.btn-lg.btn-success.btn-primary.next next
+					a.btn.btn-lg.btn-success.btn-primary.prev Prev
+					a.btn.btn-lg.btn-success.btn-primary.next Next
 				div.col-md-6.text-right
 					button.btn.btn-lg.btn-success.btn-primary(type="submit") Save &amp; Exit
 					a.btn.btn-lg.btn-success.btn-primary.hide.submit.disabled(href="/") Finish &amp; Submit
